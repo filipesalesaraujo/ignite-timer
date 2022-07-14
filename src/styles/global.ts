@@ -1,5 +1,5 @@
-import {createGlobalStyle} from "styled-components";
-import {defaultTheme} from "./themes/default";
+import { createGlobalStyle } from 'styled-components'
+import { defaultTheme } from './themes/default'
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -10,16 +10,18 @@ export const GlobalStyle = createGlobalStyle`
 
   :focus {
     outline: 0;
-    box-shadow: 0 0 0 2px ${defaultTheme["green-500"]};
+    box-shadow: 0 0 0 2px ${defaultTheme['green-500']};
   }
 
   body {
-    background: ${defaultTheme["gray-900"]};
-    color: ${defaultTheme["gray-300"]};
+    background: ${defaultTheme['gray-900']};
+    color: ${defaultTheme['gray-300']};
 
-    body, input.textarea, button {
-      font-family: 'Roboto', sans-serif;
-      font-weight: 400;
-      font-size: 1rem;
-    }
-`;
+  }
+
+  body, input, textarea, button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+`
